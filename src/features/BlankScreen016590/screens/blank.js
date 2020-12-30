@@ -34,8 +34,24 @@ export default class Blank extends React.Component {
             "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/2_BhXz1z9.jpg"
         }}
       />
+      <View>
+        <View style={styles.View_4}>
+          <Image
+            source={{ uri: "https://via.placeholder.com/150" }}
+            style={styles.Image_9}
+          />
+        </View>
+        <View />
+      </View>
     </View>
   )
 }
 
-const styles = StyleSheet.create({ View_1: {}, Image_2: {} })
+const styles = StyleSheet.create({
+  View_1: {},
+  Image_2: {},
+  View_3: {},
+  View_4: { width: 300, height: 100 },
+  Image_9: { width: 100, height: 100 },
+  View_5: {}
+})
