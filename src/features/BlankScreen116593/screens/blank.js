@@ -24,9 +24,19 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = { DateTimePicker_2: new Date("12/30/0007") }
 
-  render = () => <View />
+  render = () => (
+    <View>
+      <DateTimePicker
+        showIcon={false}
+        date={this.state.DateTimePicker_2}
+        onDateChange={selectedDate =>
+          this.setState({ DateTimePicker_2: selectedDate })
+        }
+      />
+    </View>
+  )
 }
 
-const styles = StyleSheet.create({ View_1: {} })
+const styles = StyleSheet.create({ View_1: {}, DateTimePicker_2: {} })
